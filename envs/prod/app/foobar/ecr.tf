@@ -30,7 +30,7 @@ resource "aws_ecr_lifecycle_policy" "nginx" {
 }
 
 module "nginx" {
-  source = "../../../modules/ecr"
+  source = "../../../../modules/ecr"
 
-  name = "example-prod-foobar-nginx"
+  name   = "example-prod-foobar-nginx"
 }
