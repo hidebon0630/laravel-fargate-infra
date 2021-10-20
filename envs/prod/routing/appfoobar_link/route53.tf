@@ -1,3 +1,3 @@
-data "aws_route53_zone" "this" {
-  name = "appfoobar.link"
+resource "aws_route53_zone" "example" {
+  name = "g0pf.com"
 }
