@@ -33,7 +33,7 @@ resource "aws_route" "nat_gateway_private" {
   for_each = var.enable_nat_gateway ? var.azs : {}
 
   destination_cidr_block = "0.0.0.0/0"
-  nat_gateway_id         = aws_nat_gateway[var.single_nat_gateway ? keys(var.azs)[0] : each.key].id
+  nat_gateway_id         = aws_nat_gateway.this[var.single_nat_gateway ? keys(var.azs)[0] : each.key].id
   route_table_id         = aws_route_table.private[each.key].id
 }
 
