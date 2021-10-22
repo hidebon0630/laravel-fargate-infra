@@ -11,7 +11,7 @@ resource "aws_db_instance" "this" {
   password = "MustChangeStrongPassword!"
 
   // DB instance class
-  instance_class = "db.t2.micro"
+  instance_class = "db.t3.micro"
 
   // Storage
   storage_type          = "gp2"

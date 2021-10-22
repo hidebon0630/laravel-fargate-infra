@@ -17,7 +17,7 @@ resource "aws_iam_role" "rds_monitoring_role" {
   )
 }
 
-data "aws_iam_role" "rds_enhanced_monitoring_role" {
+data "aws_iam_policy" "rds_enhanced_monitoring_role" {
   arn = "arn:aws:iam::aws:policy/service-role/AmazonRDSEnhancedMonitoringRole"
 }
 
