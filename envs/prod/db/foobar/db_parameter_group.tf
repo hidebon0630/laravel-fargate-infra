@@ -4,57 +4,57 @@ resource "aws_db_parameter_group" "this" {
   family = "mysql8.0"
 
   parameter {
-    name = "character_set_client"
+    name  = "character_set_client"
     value = "utf8mb4"
   }
 
   parameter {
-    name = "character_set_connection"
-    value = "utf8mb4"
-  }
-
-    parameter {
-    name = "character_set_database"
+    name  = "character_set_connection"
     value = "utf8mb4"
   }
 
   parameter {
-    name = "character_set_filesystem"
+    name  = "character_set_database"
     value = "utf8mb4"
   }
 
   parameter {
-    name = "character_set_results"
+    name  = "character_set_filesystem"
     value = "utf8mb4"
   }
 
   parameter {
-    name = "character_set_server"
+    name  = "character_set_results"
     value = "utf8mb4"
   }
 
   parameter {
-    name = "collation_server"
+    name  = "character_set_server"
+    value = "utf8mb4"
+  }
+
+  parameter {
+    name  = "collation_server"
     value = "utf8mb4_0900_ai_ci"
   }
 
   parameter {
-    name = "general_log"
+    name  = "general_log"
     value = "1"
   }
 
   parameter {
-    name = "slow_query_log"
+    name  = "slow_query_log"
     value = "1"
   }
 
   parameter {
-    name = "long_query_time"
+    name  = "long_query_time"
     value = "1.0"
   }
 
   parameter {
-    name = "log_output"
+    name  = "log_output"
     value = "FILE"
   }
 
